@@ -17,4 +17,6 @@ automáticamente en tan solo unos segundos.
 
     window.appInsights=appInsights;
     appInsights.trackPageView();
+    appInsights.trackEvent("WinGame", {Game: "GameName", Difficulty: "Hard"}, {GameScore: 20, Opponents: 1});
+    appInsights.trackMetric("GameScore", 20,  {Game: "GameName", Difficulty: "Hard"});
 </script>
